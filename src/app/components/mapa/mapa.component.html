@@ -1,0 +1,10 @@
+<p>mapa works!</p>
+
+
+<input type="number" name="" id="" [(ngModel)]="latitude">
+<input type="number" name="" id="" [(ngModel)]="longitude">
+<input type="text" name="" id="" [(ngModel)]="localizacion">
+<button (click)="agregar()" [disabled]="latitude == 0 || longitude == 0 || localizacion.length == 0">AGREGAR COORDENADAS </button>
+<a routerLink="/mapa2">IR A MAPA</a>
+<br>
+<div id="map"></div>
